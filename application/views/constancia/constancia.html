@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="<?php echo base_url() ?>componentes/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo base_url() ?>componentes/bootstrap-3.3.5/css/styles.css" rel="stylesheet">
+</head>
+<body class="constancia">
+
+<header class="col-md-6 col-md-offset-3 header_constancia">
+	<img src="<?php echo base_url() ?>componentes/bootstrap-3.3.5/img/logo_constancia.jpg">
+	<div class="row line_constancia">
+		<p class="membrete_constancia text-center">Fundada en 1930 <strong class="punto_constancia">•</strong> Patrimonio Artístico de la nación <strong class="punto_constancia">•</strong> Sede permanente: Sala Ríos-Reyna <strong class="punto_constancia">•</strong> Teatro Teresa Carreño</p>
+	</div>
+</header>
+
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+	<br><br><br>
+		<h1 class="text-center"><strong><em><u>CONSTANCIA DE TRABAJO</u></strong></h1>
+<br><br><br>
+<p class="text-center">Por medio de la presente la <u><strong>SOCIEDAD ORQUESTA SINFONICA DE VENEZUELA,</strong></u> hace constar que el Sr(a) <b><?php echo $pdfData['nombre'].' '.$pdfData['apellido'];?></b> titular de la Cédula de Identidad <b><?php echo $pdfData['cedula'];?></b> trabaja en esta sociedad desde el <b><?php echo date("d-m-Y",strtotime($pdfData['fecha_ing']));?></b>, desempeñando el cargo de <strong><b><?php echo $pdfData['cargo'];?></b>.</strong></p>
+		<br><br>
+
+		<p class="text-center">Constancia que se expide a peticion de la parte interesada en la ciudad de Caracas, a los VARAIBLE FECHA DE HOY EN TEXTO.</p>
+		<br><br>
+
+		<p class="text-center">P/Sociedad Orquesta Sinfonica de Venezuela </p>
+		<br><br>
+
+		<strong><p class="text-center">Pedro Gonzalez</p> <p class="text-center">Presidente</p></em></strong>
+	</div>
+</div>
+<footer class="col-md-6 col-md-offset-3 footer_constancia">
+	<p class="text-center">Final Pase Colón, Complejo Cultural Teresa Carreño, sótano 1, ofic. 1. Los Caobos, Caracas 1010A, D.C. Venezuela</p> 
+	<p class="text-center">Telf.: (0212) 578.1266 <strong class="punto_constancia">•</strong> 578.2845 <strong class="punto_constancia">•</strong> 578.3589 Fax: (0212) 578.0774</p>
+	<p class="text-center">www.osv.org.ve correo@sinfonicadevenezuela.org</p>
+	<p class="text-center">RIF: J-00067829-4 (Sociedad Orquesta Sinfónica de Venezuela)</p>
+</footer>
+</body>
+</html>
